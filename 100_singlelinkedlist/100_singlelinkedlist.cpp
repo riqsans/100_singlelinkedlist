@@ -3,7 +3,7 @@ using namespace std;
 
 struct Node {
 	int noMhs;
-	string nama;
+	string name;
 	Node* next;
 };
 
@@ -17,4 +17,14 @@ void addNode() {
 	cin >> nim;
 	cout << "Masukkan Nama : ";
 	cin >> nama;
+	nodeBaru->noMhs = nim;
+	nodeBaru->name = nama;
+
+	if (START == NULL || nime <= START->noMhs) {
+		if (START != NULL && nime == START->noMHS)
+		{
+			cout << "NIM sudah ada" << endl;
+			return;
+		}
+	}
 }
